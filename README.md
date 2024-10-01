@@ -1,124 +1,48 @@
 # ParaMeuCurriculousing System;
-```
-using System.Collections.Generic;
+![alt text](<Captura de tela 2024-10-01 150637.png>)
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Listas de opções
-        List<Lanche> lanches = new List<Lanche>
-        {
-            new Lanche("Hambúrguer", 15.00),
-            new Lanche("Cheeseburger", 17.00),
-            new Lanche("Hot Dog", 10.00),
-            new Lanche("Sanduíche Natural", 12.00)
-        };
+# O que foi utilizado?
 
-        List<Bebida> bebidas = new List<Bebida>
-        {
-            new Bebida("Refrigerante", 5.00),
-            new Bebida("Suco", 7.00),
-            new Bebida("Água", 3.00)
-        };
+Classes e Herança: Foram criadas classes para representar os diferentes tipos de itens (Lanche, Bebida, Sobremesa), utilizando uma classe base Item para compartilhar propriedades comuns.
 
-        List<Sobremesa> sobremesas = new List<Sobremesa>
-        {
-            new Sobremesa("Brownie", 8.00),
-            new Sobremesa("Pudim", 6.00),
-            new Sobremesa("Sorvete", 9.00)
-        };
+Listas Genéricas: Listas foram usadas para armazenar as opções de lanches, bebidas e sobremesas.
 
-        // Exibir opções
-        Console.WriteLine("Bem-vindo à Lanchonete!");
-        var total = 0.0;
+Enumeração: Uma enumeração (FormaPagamento) foi criada para representar as diferentes formas de pagamento.
 
-        total += EscolherItem("Lanches", lanches);
-        total += EscolherItem("Bebidas", bebidas);
-        total += EscolherItem("Sobremesas", sobremesas);
+Métodos: Foram implementados métodos para escolher itens, selecionar a forma de pagamento e exibir um comprovante.
 
-        // Escolha da forma de pagamento
-        FormaPagamento pagamento = EscolherFormaPagamento();
+Estruturas de Controle: Estruturas como while e do-while foram utilizadas para validar as entradas do usuário.
 
-        // Exibir comprovante
-        ExibirComprovante(total, pagamento);
-    }
+# Quais as etapas implementares?
 
-    static double EscolherItem<T>(string tipo, List<T> itens) where T : Item
-    {
-        Console.WriteLine($"\nEscolha um(a) {tipo} (ou 0 para nenhum):");
-        Console.WriteLine("0. Nenhum");
+- [x] Planejamento: Definição das funcionalidades principais do sistema, como seleção de itens e formas de pagamento.
 
-        for (int i = 0; i < itens.Count; i++)
-        {
-            Console.WriteLine($"{i + 1}. {itens[i].Nome} - R$ {itens[i].Preco:F2}");
-        }
+- [x] Estruturação do Código:
 
-        int escolha;
-        do
-        {
-            Console.Write("Digite o número da sua escolha: ");
-        } while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 0 || escolha > itens.Count);
+- [x] Design das classes para lanches, bebidas e sobremesas.
+- [x] Implementação da classe base e das subclasses.
 
-        return escolha == 0 ? 0 : itens[escolha - 1].Preco;
-    }
+## Implementação dos Métodos:
 
-    static FormaPagamento EscolherFormaPagamento()
-    {
-        Console.WriteLine("\nEscolha a forma de pagamento:");
-        Console.WriteLine("1. Dinheiro");
-        Console.WriteLine("2. Cartão de Crédito");
-        Console.WriteLine("3. Cartão de Débito");
+- [x] Criação de métodos para escolher itens e formas de pagamento.
+- [x] Implementação do método para exibir o comprovante.
+- [x] Testes: Realização de testes manuais para garantir que o sistema funcione conforme esperado, verificando entradas válidas e inválidas.
 
-        int escolha;
-        do
-        {
-            Console.Write("Digite o número da sua escolha: ");
-        } while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > 3);
+- [x] Documentação: Comentários no código para explicar a lógica e facilitar futuras manutenções.
 
-        return (FormaPagamento)escolha;
-    }
+# Backlog
 
-    static void ExibirComprovante(double total, FormaPagamento pagamento)
-    {
-        Console.WriteLine("\n--- Comprovante de Pagamento ---");
-        Console.WriteLine($"Total do pedido: R$ {total:F2}");
-        Console.WriteLine($"Forma de pagamento: {pagamento}");
-        Console.WriteLine("-------------------------------");
-    }
-}
+- [ ] Adicionar mais opções de itens: Incluir mais lanches, bebidas e sobremesas.
 
-abstract class Item
-{
-    public string Nome { get; }
-    public double Preco { get; }
+- [ ] Implementar a funcionalidade de descontos: Permitir que o usuário insira cupons de desconto.
 
-    protected Item(string nome, double preco)
-    {
-        Nome = nome;
-        Preco = preco;
-    }
-}
+- [ ] Salvar pedidos: Adicionar a opção de salvar os pedidos em um arquivo para futuras referências.
 
-class Lanche : Item
-{
-    public Lanche(string nome, double preco) : base(nome, preco) { }
-}
+- [ ] Interface Gráfica: Considerar a criação de uma interface gráfica para melhorar a experiência do usuário.
 
-class Bebida : Item
-{
-    public Bebida(string nome, double preco) : base(nome, preco) { }
-}
+- [ ] Relatório de Vendas: Criar um sistema para gerar relatórios sobre os itens mais vendidos.
 
-class Sobremesa : Item
-{
-    public Sobremesa(string nome, double preco) : base(nome, preco) { }
-}
+# Conclusão
+O programa desenvolvido para a lanchonete é uma implementação simples, mas funcional, que permite ao usuário escolher lanches, bebidas e sobremesas, selecionar uma forma de pagamento e receber um comprovante. Utilizando conceitos fundamentais da programação orientada a objetos e estruturas de controle, o programa é fácil de entender e expandir.
 
-enum FormaPagamento
-{
-    Dinheiro = 1,
-    CartaoCredito,
-    CartaoDebito
-}
-```
+As etapas complementares e o backlog sugerem um caminho claro para aprimoramentos futuros, o que permitirá a evolução do sistema e a adição de funcionalidades mais complexas. A modularidade do código facilita a manutenção e a implementação de novas características, tornando-o uma base sólida para um sistema de lanchonete.

@@ -11,21 +11,27 @@ class Program
             new Lanche("Hambúrguer", 15.00),
             new Lanche("Cheeseburger", 17.00),
             new Lanche("Hot Dog", 10.00),
-            new Lanche("Sanduíche Natural", 12.00)
+            new Lanche("Sanduíche Natural", 12.00),
+            new Lanche("X-Burguer", 18.00),
+            new Lanche("Sanduiche de Frango", 14.00)
         };
 
         List<Bebida> bebidas = new List<Bebida>
         {
             new Bebida("Refrigerante", 5.00),
             new Bebida("Suco", 7.00),
-            new Bebida("Água", 3.00)
+            new Bebida("Água", 3.00),
+            new Bebida("Cha Gelado", 6.00),
+            new Bebida("Cerveja", 10.00)
         };
 
         List<Sobremesa> sobremesas = new List<Sobremesa>
         {
             new Sobremesa("Brownie", 8.00),
             new Sobremesa("Pudim", 6.00),
-            new Sobremesa("Sorvete", 9.00)
+            new Sobremesa("Sorvete", 9.00),
+            new Sobremesa("Torta de Limao", 7.00),
+            new Sobremesa("Pave", 9.00)
         };
 
         // Exibir opções

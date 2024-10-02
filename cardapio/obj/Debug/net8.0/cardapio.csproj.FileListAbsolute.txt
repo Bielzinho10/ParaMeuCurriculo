@@ -1,0 +1,15 @@
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\bin\Debug\net8.0\cardapio.exe
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\bin\Debug\net8.0\cardapio.deps.json
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\bin\Debug\net8.0\cardapio.runtimeconfig.json
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\bin\Debug\net8.0\cardapio.dll
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\bin\Debug\net8.0\cardapio.pdb
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.AssemblyInfoInputs.cache
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.AssemblyInfo.cs
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.csproj.CoreCompileInputs.cache
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.sourcelink.json
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.dll
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\refint\cardapio.dll
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.pdb
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\cardapio.genruntimeconfig.cache
+C:\Users\Alunos\OneDrive\Documentos\Gabriel ferreira\ParaMeuCurriculo\cardapio\obj\Debug\net8.0\ref\cardapio.dll

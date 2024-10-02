@@ -30,9 +30,9 @@ Estruturas de Controle: Estruturas como while e do-while foram utilizadas para v
 
 - [x] Documentação: Comentários no código para explicar a lógica e facilitar futuras manutenções.
 
-# Backlog
+- [x] Adicionar mais opções de itens: Incluir mais lanches, bebidas e sobremesas.
 
-- [ ] Adicionar mais opções de itens: Incluir mais lanches, bebidas e sobremesas.
+# Backlog
 
 - [ ] Implementar a funcionalidade de descontos: Permitir que o usuário insira cupons de desconto.
 
